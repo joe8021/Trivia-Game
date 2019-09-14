@@ -10,23 +10,28 @@
     <title>Trivia Game</title>
 </head>
 <body>
-    <!-- In order to keep state of variables and other objects use a reset method -->
-
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-4">Trivial Trivia Game</h1>
-          <button type="button" id="start_button" class="btn btn-primary btn-lg btn-block">Start Game!</button>
-          <h2 id="time_remaining"> </h2>
-          <div id="correct">Correct: </div>
-          <div id="incorrect"> Incorrect:</div>
-          <div id="question"></div>
-          <div class="btn-group-vertical" role="group" aria-label="First group">
-            <button id="option1" type="button" class="btn btn-secondary">1</button>
-            <button id="option2" type="button" class="btn btn-secondary">2</button>
-            <button id="option3" type="button" class="btn btn-secondary">3</button>
-          </div>
-        </div>
-    </div>
+    <div class="container">
+            <div class="jumbotron jumbotron">
+              <div id="game">
+                <h2>Trivia Game</h2>
+                <p id="time_remaining"></p>
+                <p id="question"></p>
+              </div>
+              
+      
+            <div class="row">
+                <button id="start_button" class="btn btn-info btn-lg">Start Game</button>
+                <div id="options">
+                </div>
+              </div>
+            </div>
+            <div id="choices" class="text-center btn-group-vertical"></div> 
+            <br>
+            <div class="results" id="correct"></div>
+            <div class="results" id="incorrect"></div>
+            <div id="ans"></div>
+      
+          </div> <!-- /container -->
 
 
 
