@@ -104,7 +104,7 @@ var trivia = {
       
         //dynamically creating answer choices
         console.log(this.trivArr[q].answers.length);
-        for(i=0;i<this.trivArr[q].answers.length;i++){
+        for(i=0;i<this.trivArr[q].answers.length+1;i++){
           //.console.log("whats up");
           // $("#choices").append("<button class='user-answer' id=" + "qs" + i + ">" + this.trivArr[q].answers[i] + "</button>")
           
